@@ -3,7 +3,6 @@ import { fireEvent, render } from '@testing-library/react';
 import { DateRepro } from './DateRepro';
 
 test('changing date value should update <DateRepro/> value', () => {
-  jest.useFakeTimers();
   const onChange = jest.fn();
 
   const { getByDisplayValue, getByPlaceholderText } = render(
